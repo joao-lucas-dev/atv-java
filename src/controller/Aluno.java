@@ -8,34 +8,16 @@ public class Aluno extends Pessoa{
 		
 		switch(idTeste) {
 			case 1:
-				
-				if(nota > 30)
-				{
-					this.n1 = 30;
-					break;
-				}
-				
+			
 				this.n1 = nota;
 				
 				break;
 			case 2:
 				
-				if(nota > 35)
-				{
-					this.n2 = 35;
-					break;
-				}
-				
 				this.n2 = nota;
 				
 				break;
 			case 3:
-				
-				if(nota > 35)
-				{
-					this.n3 = 35;
-					break;
-				}
 				
 				this.n3 = nota;
 				
@@ -53,7 +35,7 @@ public class Aluno extends Pessoa{
 	
 	public double gerarNotaFinal() {
 
-		this.media = (this.n1 + this.n2 + this.n3);
+		this.media = ((this.n1 + this.n2 + this.n3) / (30 + 35 + 35)) * 100;
 		return this.media;
 	}
 	
